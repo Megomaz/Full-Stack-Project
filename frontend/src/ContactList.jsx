@@ -1,6 +1,22 @@
 import React from 'react'
 
-const ContactList = ({ contacts }) => { // Define a functional component that takes contacts as a prop
+const ContactList = ({ contacts, updateContact, updateCallback }) => { // Define a functional component that takes contacts as a prop
+  const onDelete = async (id) => {
+    try {
+      const options = {
+        method: 'DELETE' // Specify the method as DELETE
+      }
+      const response = await fetch(`http://127.0.0.1:5000/delete-contact/${id}`, options)
+      if (response.status === 200) {
+        updateCallback() // Call the updateCallback function to refresh the contact list
+      } else {
+        console.error('Failed to delete contact') // Log an error if the deletion fails
+      }
+    } catch (error) {
+        alert(error)
+    }
+  }
+  
   return <div >
       <h2>Contact List</h2>
       <table>
@@ -15,12 +31,12 @@ const ContactList = ({ contacts }) => { // Define a functional component that ta
         <tbody>
             {contacts.map((contact) => ( // Map through contacts and create a row for each
               <tr key={contact.id}>
-                <td>{contact.first_name}</td>
-                <td>{contact.last_name}</td>
+                <td>{contact.firstName}</td>
+                <td>{contact.lastName}</td>
                 <td>{contact.email}</td>
                 <td>
-                  <button> Edit</button>
-                  <button> Delete</button>
+                  <button onClick={() => updateContact(contact)}> Edit</button>
+                  <button onClick={() => onDelete(contact.id)}> Delete</button>
                 </td>
               </tr>
             ))}

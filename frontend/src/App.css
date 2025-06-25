@@ -1,23 +1,28 @@
+/* Center the root container and give it breathing room */
 #root {
-  max-width: 1280px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
+/* Logo styling */
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  height: 5rem;
+  padding: 1rem;
+  transition: filter 0.3s ease;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 1.5rem #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 1.5rem #61dafbaa);
 }
 
+/* Optional: spinning animation for the logo */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +38,32 @@
   }
 }
 
+/* Card styling - clean and centered with subtle shadow */
 .card {
+  background-color: #fff;
   padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+  margin-top: 2rem;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
 }
 
+/* Docs text */
 .read-the-docs {
-  color: #888;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #root {
+    padding: 1.5rem 1rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
 }
