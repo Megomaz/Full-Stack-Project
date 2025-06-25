@@ -1,72 +1,80 @@
+# Contact List - Full Stack Application
 
-# Getting Started with Create React App
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/632faa6c-9d63-4ecd-83c0-71b08487c50e" width="500" alt="Main Interface">
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My first full-stack project built with React (frontend) and Flask (backend). This contact management application demonstrates CRUD operations and marks the beginning of my full-stack development journey - many more projects to come!
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 📋 Contact Listing
+- View all contacts in a clean, organized layout
+- See first names, last names, and email addresses at a glance
 
-### `npm start`
+<img src="https://github.com/user-attachments/assets/76785cff-1b27-4fbb-83b0-97c22d3b5879" width="400" alt="Listing View">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ➕ Create New Contacts
+- Simple form to add new contacts
+- Validation for proper email formatting
+- Instant updates to the contact list
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/a0fc85ea-ce5e-4433-ad60-e50c3c78c480" width="300" alt="Create Form"></td>
+    <td><img src="https://github.com/user-attachments/assets/5e33810c-c40d-473c-9545-b35ab119be76" width="300" alt="Create Example"></td>
+  </tr>
+</table>
 
-### `npm test`
+### ✏️ Edit Existing Contacts
+- Update contact information with ease
+- Preserves original data while editing
+- Seamless integration with the backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/9d85e535-1549-4a5f-91c9-881a65512a4d" width="300" alt="Edit Interface"></td>
+    <td><img src="https://github.com/user-attachments/assets/0bb4d1b3-70b6-4ac0-a0e8-11e58dd3bbca" width="300" alt="Edit Example"></td>
+  </tr>
+</table>
 
-### `npm run build`
+### ❌ Delete Contacts
+- Remove contacts with confirmation
+- Clean interface with intuitive actions
+- Immediate reflection in the UI
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://github.com/user-attachments/assets/2f23975d-b771-4e5f-aabe-8950825e28f9" width="400" alt="Delete Actions">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technology Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend
+- React.js
+- HTML/CSS
+- JavaScript (ES6+)
 
-### `npm run eject`
+### Backend
+- Python
+- Flask
+- RESTful API design
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository
+2. Install dependencies for both frontend and backend
+3. Start the Flask server
+4. Launch the React application
+5. Access the contact list at `http://localhost:5173`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Future Improvements
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+As my first full-stack project, there's always room for growth. Future enhancements might include:
+- User authentication
+- Contact categorization
+- Search functionality
+- Profile pictures for contacts
 
-## Learn More
+## About the Developer
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project represents my initial foray into full-stack development. I'm excited to continue building more complex applications and expanding my skills in both frontend and backend technologies.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+⭐ Star this repository if you find it interesting!
